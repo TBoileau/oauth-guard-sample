@@ -1,0 +1,12 @@
+o_auth_facebook_connect:
+    path:     /connect/facebook
+    defaults: { _controller: OAuthBundle:Facebook:connect }
+o_auth_facebook_check:
+    path:     /connect/facebook/check
+    defaults: { _controller: OAuthBundle:Facebook:check }
+o_auth_google_connect:
+    path:     /connect/google
+    defaults: { _controller: OAuthBundle:Google:connect }
+o_auth_google_check:
+    path:     /connect/google/check
+    defaults: { _controller: OAuthBundle:Google:check }

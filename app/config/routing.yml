@@ -1,0 +1,11 @@
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+o_auth:
+    resource: "@OAuthBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

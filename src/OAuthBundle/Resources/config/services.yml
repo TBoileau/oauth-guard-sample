@@ -1,0 +1,12 @@
+parameters:
+   facebook_client_id: "1650424091640490"
+   facebook_client_secret: "4f01879be62600c0ffa9b4f7cbf92ae2"
+   google_client_id: "294123698380-qs2grkrut3j1dagd13vmbqs4digmjv4q.apps.googleusercontent.com"
+   google_client_secret: "z6c2cZrbHRx7Q9BKhoiI8Sey"
+services:
+    o_auth.facebook_authenticator:
+        class: OAuthBundle\Security\FacebookAuthenticator
+        arguments: ["@service_container"]
+    o_auth.google_authenticator:
+        class: OAuthBundle\Security\GoogleAuthenticator
+        arguments: ["@service_container"]
